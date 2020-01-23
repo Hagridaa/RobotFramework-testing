@@ -1,9 +1,11 @@
 *** Settings ***
 Documentation  These are API test for the app
-Resource  ../Resources/Api.robot
+Resource  ../Resources/API/Api.robot
 
 
 *** Variables ***
 
 *** Test Cases ***
-Api consumer can review users registered in system
+Get token
+    [Tags]  API-test
+    Check Response Json
