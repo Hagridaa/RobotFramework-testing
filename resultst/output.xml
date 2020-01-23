@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.1 on win32)" generated="20200123 16:41:40.169" rpa="false">
+<suite id="s1" name="Demo" source="C:\development\robot-scripts\DemoTests\tests\Demo.robot">
+<test id="s1-t1" name="Should be able to access &quot;main&quot; page">
+<kw name="Begin Web Test" library="Common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200123 16:41:40.703" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200123 16:41:40.702" endtime="20200123 16:41:43.835"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200123 16:41:43.836" endtime="20200123 16:41:45.011"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:41:40.702" endtime="20200123 16:41:45.012"></status>
+</kw>
+<kw name="Go to LandingPage" library="DemoApp">
+<kw name="Navigate to" library="LandingPage">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20200123 16:41:45.017" level="INFO">Opening url 'http://localhost:8080/'</msg>
+<status status="PASS" starttime="20200123 16:41:45.016" endtime="20200123 16:41:45.623"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:41:45.015" endtime="20200123 16:41:45.624"></status>
+</kw>
+<kw name="Verify Page loaded" library="LandingPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${LANDINGPAGE_DEMOLINK}</arg>
+</arguments>
+<status status="PASS" starttime="20200123 16:41:45.625" endtime="20200123 16:41:45.697"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:41:45.624" endtime="20200123 16:41:45.698"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:41:45.014" endtime="20200123 16:41:45.699"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200123 16:41:47.713" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200123 16:41:45.711" endtime="20200123 16:41:47.713"></status>
+</kw>
+<kw name="End Web Test" library="Common" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200123 16:41:47.715" endtime="20200123 16:41:50.167"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:41:47.714" endtime="20200123 16:41:50.167"></status>
+</kw>
+<doc>testing to go to main page</doc>
+<tags>
+<tag>Test1</tag>
+</tags>
+<status status="PASS" starttime="20200123 16:41:40.701" endtime="20200123 16:41:50.168" critical="yes"></status>
+</test>
+<test id="s1-t2" name="&quot;Register&quot; page should match requirements">
+<kw name="Begin Web Test" library="Common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200123 16:41:50.204" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200123 16:41:50.204" endtime="20200123 16:41:52.981"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200123 16:41:52.982" endtime="20200123 16:41:54.151"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:41:50.202" endtime="20200123 16:41:54.152"></status>
+</kw>
+<kw name="Go to LandingPage" library="DemoApp">
+<kw name="Navigate to" library="LandingPage">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20200123 16:41:54.156" level="INFO">Opening url 'http://localhost:8080/'</msg>
+<status status="PASS" starttime="20200123 16:41:54.155" endtime="20200123 16:41:54.710"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:41:54.154" endtime="20200123 16:41:54.710"></status>
+</kw>
+<kw name="Verify Page loaded" library="LandingPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${LANDINGPAGE_DEMOLINK}</arg>
+</arguments>
+<status status="PASS" starttime="20200123 16:41:54.712" endtime="20200123 16:41:54.788"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:41:54.711" endtime="20200123 16:41:54.788"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:41:54.153" endtime="20200123 16:41:54.788"></status>
+</kw>
+<kw name="Go to Register Page" library="DemoApp">
+<kw name="Select &quot;Register&quot; Page" library="Register">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${REGISTER_LINK}</arg>
+</arguments>
+<status status="PASS" starttime="20200123 16:41:54.789" endtime="20200123 16:41:54.828"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${REGISTER_LINK}</arg>
+</arguments>
+<msg timestamp="20200123 16:41:54.829" level="INFO">Clicking element 'css=body &gt; nav &gt; ul &gt; li:nth-child(1) &gt; a'.</msg>
+<status status="PASS" starttime="20200123 16:41:54.828" endtime="20200123 16:41:55.385"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200123 16:41:58.386" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200123 16:41:55.386" endtime="20200123 16:41:58.386"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:41:54.789" endtime="20200123 16:41:58.386"></status>
+</kw>
+<kw name="Verify Page loaded" library="Register">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${REGISTER_H1}</arg>
+</arguments>
+<status status="PASS" starttime="20200123 16:41:58.387" endtime="20200123 16:41:58.419"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:41:58.386" endtime="20200123 16:41:58.420"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:41:54.788" endtime="20200123 16:41:58.420"></status>
+</kw>
+<kw name="Validate RegisterPage" library="DemoApp">
+<kw name="Validate Page Contents" library="Register">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${REGISTER_H1}</arg>
+<arg>Register</arg>
+</arguments>
+<msg timestamp="20200123 16:41:58.421" level="INFO">Verifying element 'css=body &gt; section &gt; header &gt; h1' contains exact text 'Register'.</msg>
+<status status="PASS" starttime="20200123 16:41:58.421" endtime="20200123 16:41:58.493"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:41:58.421" endtime="20200123 16:41:58.494"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:41:58.420" endtime="20200123 16:41:58.494"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200123 16:42:00.496" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200123 16:41:58.494" endtime="20200123 16:42:00.496"></status>
+</kw>
+<kw name="End Web Test" library="Common" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200123 16:42:00.498" endtime="20200123 16:42:02.951"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:00.497" endtime="20200123 16:42:02.951"></status>
+</kw>
+<doc>testing that register page match rq</doc>
+<tags>
+<tag>Test2</tag>
+</tags>
+<status status="PASS" starttime="20200123 16:41:50.179" endtime="20200123 16:42:02.953" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Should be able to register">
+<kw name="Begin Web Test" library="Common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200123 16:42:02.966" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200123 16:42:02.965" endtime="20200123 16:42:05.900"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200123 16:42:05.901" endtime="20200123 16:42:07.069"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:02.964" endtime="20200123 16:42:07.070"></status>
+</kw>
+<kw name="Go to LandingPage" library="DemoApp">
+<kw name="Navigate to" library="LandingPage">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20200123 16:42:07.076" level="INFO">Opening url 'http://localhost:8080/'</msg>
+<status status="PASS" starttime="20200123 16:42:07.075" endtime="20200123 16:42:07.648"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:07.073" endtime="20200123 16:42:07.648"></status>
+</kw>
+<kw name="Verify Page loaded" library="LandingPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${LANDINGPAGE_DEMOLINK}</arg>
+</arguments>
+<status status="PASS" starttime="20200123 16:42:07.649" endtime="20200123 16:42:07.687"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:07.648" endtime="20200123 16:42:07.688"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:07.072" endtime="20200123 16:42:07.688"></status>
+</kw>
+<kw name="Go to Register Page" library="DemoApp">
+<kw name="Select &quot;Register&quot; Page" library="Register">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${REGISTER_LINK}</arg>
+</arguments>
+<status status="PASS" starttime="20200123 16:42:07.692" endtime="20200123 16:42:07.713"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${REGISTER_LINK}</arg>
+</arguments>
+<msg timestamp="20200123 16:42:07.714" level="INFO">Clicking element 'css=body &gt; nav &gt; ul &gt; li:nth-child(1) &gt; a'.</msg>
+<status status="PASS" starttime="20200123 16:42:07.713" endtime="20200123 16:42:08.203"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200123 16:42:11.206" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200123 16:42:08.203" endtime="20200123 16:42:11.206"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:07.691" endtime="20200123 16:42:11.206"></status>
+</kw>
+<kw name="Verify Page loaded" library="Register">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${REGISTER_H1}</arg>
+</arguments>
+<status status="PASS" starttime="20200123 16:42:11.207" endtime="20200123 16:42:11.228"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:11.206" endtime="20200123 16:42:11.229"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:07.690" endtime="20200123 16:42:11.229"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+</arguments>
+<msg timestamp="20200123 16:42:11.230" level="INFO">Typing text 'username' into text field 'id=username'.</msg>
+<status status="PASS" starttime="20200123 16:42:11.230" endtime="20200123 16:42:11.401"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20200123 16:42:11.403" level="INFO">Typing text 'password' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20200123 16:42:11.402" endtime="20200123 16:42:11.566"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=firstname</arg>
+<arg>${FIRST_NAME}</arg>
+</arguments>
+<msg timestamp="20200123 16:42:11.568" level="INFO">Typing text 'firstname' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20200123 16:42:11.567" endtime="20200123 16:42:11.721"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=lastname</arg>
+<arg>${FAMILY_NAME}</arg>
+</arguments>
+<msg timestamp="20200123 16:42:11.723" level="INFO">Typing text 'familyname' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20200123 16:42:11.722" endtime="20200123 16:42:11.879"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=phone</arg>
+<arg>${PHONENUMBER}</arg>
+</arguments>
+<msg timestamp="20200123 16:42:11.881" level="INFO">Typing text 'phonenumber' into text field 'id=phone'.</msg>
+<status status="PASS" starttime="20200123 16:42:11.880" endtime="20200123 16:42:12.073"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200123 16:42:14.075" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200123 16:42:12.074" endtime="20200123 16:42:14.075"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${REGISTER}</arg>
+</arguments>
+<msg timestamp="20200123 16:42:14.077" level="INFO">Clicking button 'css=body &gt; section &gt; form &gt; input[type=submit]:nth-child(11)'.</msg>
+<status status="PASS" starttime="20200123 16:42:14.076" endtime="20200123 16:42:14.556"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200123 16:42:16.560" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200123 16:42:14.558" endtime="20200123 16:42:16.560"></status>
+</kw>
+<kw name="End Web Test" library="Common" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200123 16:42:16.561" endtime="20200123 16:42:19.016"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:16.561" endtime="20200123 16:42:19.016"></status>
+</kw>
+<doc>testing that user should be able to register as user</doc>
+<tags>
+<tag>Test3</tag>
+</tags>
+<status status="PASS" starttime="20200123 16:42:02.960" endtime="20200123 16:42:19.018" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Should be able to go to signin page">
+<kw name="Begin Web Test" library="Common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200123 16:42:19.030" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200123 16:42:19.028" endtime="20200123 16:42:21.868"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200123 16:42:21.869" endtime="20200123 16:42:23.016"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:19.027" endtime="20200123 16:42:23.016"></status>
+</kw>
+<kw name="Go to LandingPage" library="DemoApp">
+<kw name="Navigate to" library="LandingPage">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20200123 16:42:23.018" level="INFO">Opening url 'http://localhost:8080/'</msg>
+<status status="PASS" starttime="20200123 16:42:23.018" endtime="20200123 16:42:23.574"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:23.017" endtime="20200123 16:42:23.575"></status>
+</kw>
+<kw name="Verify Page loaded" library="LandingPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${LANDINGPAGE_DEMOLINK}</arg>
+</arguments>
+<status status="PASS" starttime="20200123 16:42:23.576" endtime="20200123 16:42:23.636"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:23.575" endtime="20200123 16:42:23.636"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:23.017" endtime="20200123 16:42:23.636"></status>
+</kw>
+<kw name="Go to LogIn" library="DemoApp">
+<kw name="Go to LogIn" library="LogIn">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${SIGNIN_LINK}</arg>
+</arguments>
+<status status="PASS" starttime="20200123 16:42:23.639" endtime="20200123 16:42:23.701"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${SIGNIN_LINK}</arg>
+</arguments>
+<msg timestamp="20200123 16:42:23.702" level="INFO">Clicking element 'css=body &gt; nav &gt; ul &gt; li:nth-child(2) &gt; a'.</msg>
+<status status="PASS" starttime="20200123 16:42:23.701" endtime="20200123 16:42:24.215"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200123 16:42:27.217" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200123 16:42:24.215" endtime="20200123 16:42:27.217"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:23.638" endtime="20200123 16:42:27.217"></status>
+</kw>
+<kw name="Verify Page loaded" library="Register">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${REGISTER_H1}</arg>
+</arguments>
+<status status="PASS" starttime="20200123 16:42:27.218" endtime="20200123 16:42:27.249"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:27.217" endtime="20200123 16:42:27.250"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:23.637" endtime="20200123 16:42:27.250"></status>
+</kw>
+<kw name="Validate LogIn" library="DemoApp">
+<kw name="Validate Page Contents" library="LogIn">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${SIGNIN_H1}</arg>
+<arg>Log In</arg>
+</arguments>
+<msg timestamp="20200123 16:42:27.252" level="INFO">Verifying element 'css=body &gt; section &gt; header &gt; h1' contains exact text 'Log In'.</msg>
+<status status="PASS" starttime="20200123 16:42:27.251" endtime="20200123 16:42:27.312"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:27.251" endtime="20200123 16:42:27.313"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:27.251" endtime="20200123 16:42:27.313"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200123 16:42:29.315" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200123 16:42:27.313" endtime="20200123 16:42:29.315"></status>
+</kw>
+<kw name="End Web Test" library="Common" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200123 16:42:29.317" endtime="20200123 16:42:31.796"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:29.316" endtime="20200123 16:42:31.797"></status>
+</kw>
+<doc>testing that user should be able to go to sign in page</doc>
+<tags>
+<tag>Test4</tag>
+</tags>
+<status status="PASS" starttime="20200123 16:42:19.024" endtime="20200123 16:42:31.799" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Should be able to signin">
+<kw name="Begin Web Test" library="Common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200123 16:42:31.831" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200123 16:42:31.830" endtime="20200123 16:42:34.425"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200123 16:42:34.425" endtime="20200123 16:42:35.587"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:31.829" endtime="20200123 16:42:35.588"></status>
+</kw>
+<kw name="Go to LandingPage" library="DemoApp">
+<kw name="Navigate to" library="LandingPage">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20200123 16:42:35.592" level="INFO">Opening url 'http://localhost:8080/'</msg>
+<status status="PASS" starttime="20200123 16:42:35.591" endtime="20200123 16:42:36.173"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:35.591" endtime="20200123 16:42:36.173"></status>
+</kw>
+<kw name="Verify Page loaded" library="LandingPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${LANDINGPAGE_DEMOLINK}</arg>
+</arguments>
+<status status="PASS" starttime="20200123 16:42:36.174" endtime="20200123 16:42:36.210"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:36.173" endtime="20200123 16:42:36.210"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:35.590" endtime="20200123 16:42:36.210"></status>
+</kw>
+<kw name="Go to LogIn" library="DemoApp">
+<kw name="Go to LogIn" library="LogIn">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${SIGNIN_LINK}</arg>
+</arguments>
+<status status="PASS" starttime="20200123 16:42:36.212" endtime="20200123 16:42:36.235"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${SIGNIN_LINK}</arg>
+</arguments>
+<msg timestamp="20200123 16:42:36.236" level="INFO">Clicking element 'css=body &gt; nav &gt; ul &gt; li:nth-child(2) &gt; a'.</msg>
+<status status="PASS" starttime="20200123 16:42:36.236" endtime="20200123 16:42:36.725"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200123 16:42:39.728" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200123 16:42:36.726" endtime="20200123 16:42:39.729"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:36.211" endtime="20200123 16:42:39.730"></status>
+</kw>
+<kw name="Verify Page loaded" library="Register">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${REGISTER_H1}</arg>
+</arguments>
+<status status="PASS" starttime="20200123 16:42:39.732" endtime="20200123 16:42:39.791"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:39.730" endtime="20200123 16:42:39.791"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:36.211" endtime="20200123 16:42:39.792"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+</arguments>
+<msg timestamp="20200123 16:42:39.794" level="INFO">Typing text 'username' into text field 'id=username'.</msg>
+<status status="PASS" starttime="20200123 16:42:39.793" endtime="20200123 16:42:39.945"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20200123 16:42:39.946" level="INFO">Typing text 'password' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20200123 16:42:39.946" endtime="20200123 16:42:40.085"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200123 16:42:43.087" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200123 16:42:40.086" endtime="20200123 16:42:43.087"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${SIGNIN}</arg>
+</arguments>
+<msg timestamp="20200123 16:42:43.088" level="INFO">Clicking button 'css=body &gt; section &gt; form &gt; input[type=submit]:nth-child(5)'.</msg>
+<status status="PASS" starttime="20200123 16:42:43.087" endtime="20200123 16:42:43.741"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20200123 16:42:53.745" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200123 16:42:43.743" endtime="20200123 16:42:53.746"></status>
+</kw>
+<kw name="End Web Test" library="Common" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200123 16:42:53.750" endtime="20200123 16:42:56.239"></status>
+</kw>
+<status status="PASS" starttime="20200123 16:42:53.748" endtime="20200123 16:42:56.240"></status>
+</kw>
+<doc>testing that user should be able to sign in and see own information</doc>
+<tags>
+<tag>Test5</tag>
+</tags>
+<status status="PASS" starttime="20200123 16:42:31.825" endtime="20200123 16:42:56.242" critical="yes"></status>
+</test>
+<doc>This test suite test Demo projects registertation and sign in functions</doc>
+<status status="PASS" starttime="20200123 16:41:40.174" endtime="20200123 16:42:56.250"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0">Critical Tests</stat>
+<stat pass="5" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Test1</stat>
+<stat pass="1" fail="0">Test2</stat>
+<stat pass="1" fail="0">Test3</stat>
+<stat pass="1" fail="0">Test4</stat>
+<stat pass="1" fail="0">Test5</stat>
+</tag>
+<suite>
+<stat pass="5" fail="0" id="s1" name="Demo">Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

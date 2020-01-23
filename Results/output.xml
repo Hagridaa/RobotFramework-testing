@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.1 on win32)" generated="20200123 12:01:13.134" rpa="false">
+<suite id="s1" name="Demo" source="C:\development\robot-scripts\DemoTests\Tests\Demo.robot">
+<test id="s1-t1" name="Should be able to access &quot;Main&quot; page">
+<kw name="Begin Web Test" library="Common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200123 12:01:13.553" level="INFO">Opening browser 'firefox' to base url 'Chrome'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20200123 12:01:13.567" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20200123 12:01:13.567" endtime="20200123 12:01:13.567"></status>
+</kw>
+<msg timestamp="20200123 12:01:13.581" level="FAIL">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</msg>
+<status status="FAIL" starttime="20200123 12:01:13.553" endtime="20200123 12:01:13.581"></status>
+</kw>
+<status status="FAIL" starttime="20200123 12:01:13.553" endtime="20200123 12:01:13.581"></status>
+</kw>
+<kw name="End Web Test" library="Common" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200123 12:01:13.582" endtime="20200123 12:01:13.583"></status>
+</kw>
+<status status="PASS" starttime="20200123 12:01:13.582" endtime="20200123 12:01:13.583"></status>
+</kw>
+<doc>testing to go to main page</doc>
+<tags>
+<tag>Test1</tag>
+</tags>
+<status status="FAIL" starttime="20200123 12:01:13.552" endtime="20200123 12:01:13.583" critical="yes">Setup failed:
+WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<test id="s1-t2" name="&quot;Main&quot; page should match requirements">
+<kw name="Begin Web Test" library="Common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200123 12:01:13.588" level="INFO">Opening browser 'firefox' to base url 'Chrome'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20200123 12:01:13.594" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20200123 12:01:13.594" endtime="20200123 12:01:13.594"></status>
+</kw>
+<msg timestamp="20200123 12:01:13.596" level="FAIL">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</msg>
+<status status="FAIL" starttime="20200123 12:01:13.588" endtime="20200123 12:01:13.596"></status>
+</kw>
+<status status="FAIL" starttime="20200123 12:01:13.587" endtime="20200123 12:01:13.596"></status>
+</kw>
+<kw name="End Web Test" library="Common" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200123 12:01:13.598" endtime="20200123 12:01:13.599"></status>
+</kw>
+<status status="PASS" starttime="20200123 12:01:13.597" endtime="20200123 12:01:13.599"></status>
+</kw>
+<doc>testing that main page match rq</doc>
+<tags>
+<tag>Test2</tag>
+</tags>
+<status status="FAIL" starttime="20200123 12:01:13.586" endtime="20200123 12:01:13.599" critical="yes">Setup failed:
+WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<doc>Talk about what this suite of test does</doc>
+<status status="FAIL" starttime="20200123 12:01:13.138" endtime="20200123 12:01:13.602"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2">Critical Tests</stat>
+<stat pass="0" fail="2">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1">Test1</stat>
+<stat pass="0" fail="1">Test2</stat>
+</tag>
+<suite>
+<stat pass="0" fail="2" id="s1" name="Demo">Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
