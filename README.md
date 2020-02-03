@@ -1,5 +1,5 @@
 # RobotFramework-testing
-Learning how to use Selenium and Api testing plus Python unittests.
+Learning how to use Robot Framework, Selenium, Python unittests and Pytest.
 
 First testing Robot framework Selenium library.
 
